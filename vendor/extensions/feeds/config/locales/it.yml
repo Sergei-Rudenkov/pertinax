@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Aggiungi Nuovo Feed
+            reorder: Riordina Feeds
+            reorder_done: Termina il Riordino di Feeds
+          records:
+            title: Feeds
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Feeds. Clicca "Aggiungi Nuovo Feed" per aggiungere il tuo primo feed.
+          feed:
+            view_live_html: Guarda live questo feed <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo feed
+            delete: Rimuovi per sempre questo feed
+      feeds:
+        show:
+          other: Altri Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        date: Date
+        photo: Photo
+        data: Data

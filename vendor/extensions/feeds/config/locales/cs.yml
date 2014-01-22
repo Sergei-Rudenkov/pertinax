@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Přidat Feed
+            reorder: Řadit Feeds
+            reorder_done: Konec řazení Feeds
+          records:
+            title: Feeds
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Feeds. Zvolte "Přidat Feed" pro přidání prvního feed.
+          feed:
+            view_live_html: Zobrazit náhled feed<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit feed
+            delete: Smazat feed
+      feeds:
+        show:
+          other: Další Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        date: Date
+        photo: Photo
+        data: Data

@@ -1,0 +1,40 @@
+<%= form_for [refinery, :feeds_admin, @feed] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @feed,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :date -%>
+    <%= f.datetime_select :date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo_id -%>
+    <%= f.text_field :photo_id -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:data],
+                :object => "feeds/feed" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.feeds.admin.feeds.feed'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @feed.title) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

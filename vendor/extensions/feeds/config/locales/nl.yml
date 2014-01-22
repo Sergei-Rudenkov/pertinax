@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Nieuwe Feed toevoegen
+            reorder: De volgorde van de Feeds wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Feed-volgorde
+          records:
+            title: Feeds
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Feeds. Druk op 'Nieuwe Feed toevoegen' om de eerste toe te voegen.
+          feed:
+            view_live_html: Deze feed op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze feed
+            delete: Deze feed definitief verwijderen
+      feeds:
+        show:
+          other: Andere Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        date: Date
+        photo: Photo
+        data: Data

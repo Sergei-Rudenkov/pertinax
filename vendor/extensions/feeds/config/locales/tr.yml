@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      feeds:
+        title: Feeds
+    feeds:
+      admin:
+        feeds:
+          actions:
+            create_new: Yeni Ekle Feed
+            reorder: Tekrar sirala Feeds
+            reorder_done: Tekrar siralama tamamlandiFeeds
+          records:
+            title: Feeds
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Feeds yok henuz.  Tikla "Yeni Ekle Feed" eklemek senin ilk feed.
+          feed:
+            view_live_html: Bunu canlu feed goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle feed
+            delete: Bunu Sil feed sonsuza dek
+      feeds:
+        show:
+          other: Diger Feeds
+  activerecord:
+    attributes:
+      'refinery/feeds/feed':
+        title: Title
+        date: Date
+        photo: Photo
+        data: Data
