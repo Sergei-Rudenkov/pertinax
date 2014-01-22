@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 
@@ -52,3 +52,4 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 #  gem 'refinerycms-page-images', '~> 2.1.0'
 
 gem 'refinerycms-feeds', :path => 'vendor/extensions'
+ruby "1.9.3"
