@@ -1,9 +1,3 @@
-PATH
-  remote: vendor/extensions
-  specs:
-    refinerycms-feeds (1.0)
-      refinerycms-core (~> 2.1.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -211,7 +205,6 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-blog (~> 2.1.0)
-  refinerycms-feeds!
   refinerycms-inquiries (~> 2.1.0)
   sass-rails (~> 3.2.3)
   sqlite3
